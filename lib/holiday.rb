@@ -50,8 +50,7 @@ def all_supplies_in_holidays(holiday_hash)
         holiday_name = day.to_s.split.map do |word|
           word.capitalize
         end.join(" ")
-        binding.pry
-      puts "  #{day}: #{stuff.join(", ")}"
+      puts "  #{holiday_name}: #{stuff.join(", ")}"
     end
   end
 end
